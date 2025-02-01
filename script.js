@@ -1,5 +1,6 @@
 // JavaScript for form validation
-
+function handleSubmit(event) {
+    event.preventDefault();
 // Name validation
 function validateName() {
     const fullName = document.getElementById("fullName").value.trim();
@@ -88,4 +89,5 @@ function handleSubmit(event) {
     } else {
         alert("Please fix the errors before submitting.");
     }
+}
 }
